@@ -18,6 +18,5 @@ jobs:
       - name: create zip archive
         run:
           cd sample2
-          zip -r sample2.zip .
-        continue-on-error: true
+          zip -r sample2.zip . -i .
     
