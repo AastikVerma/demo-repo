@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v2
       - name: create zip archive
         run:
-          zip -r sample2.zip demo-repo/sample2
+          zip -r index.zip index.html
       - name: upload zip artifact
         uses: actions/upload-artifact@v2
         with:
