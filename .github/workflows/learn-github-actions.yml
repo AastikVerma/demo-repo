@@ -17,6 +17,6 @@ jobs:
      steps: 
       - name: create zip archive
         run:
-          zip -r sample2.zip . -i sample2
-        working-directory: ${{ github.workspace }}
+          zip -r -q sample2.zip sample2
+        
     
