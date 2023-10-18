@@ -15,8 +15,7 @@ jobs:
   create-zip-archive:
      runs-on: ubuntu-latest
      steps: 
-      - name: create zip rachive
+      - name: create zip archive
         run:
-          cd sample2
-          zip -r ../sample2.zip .
+          zip -r sample2.zip .
     
