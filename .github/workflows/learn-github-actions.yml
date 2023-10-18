@@ -17,6 +17,5 @@ jobs:
      steps: 
       - name: create zip archive
         run:
-          cd sample2
-          zip -r sample2.zip . -i .
+          zip -r sample2.zip sample2
     
