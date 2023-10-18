@@ -23,7 +23,7 @@ jobs:
       - name: upload zip artifact
         uses: actions/upload-artifact@v2
         with:
-          name: sample2-artifact
-          path: sample2.zip
+          name: index-artifact
+          path: index.zip
         
     
