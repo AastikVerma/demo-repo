@@ -17,6 +17,11 @@ jobs:
      steps: 
       - name: create zip archive
         run:
-          zip -r -q sample2.zip . -i sample2
+          zip -r sample2.zip . -i sample2
+      - name: upload zip artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: sample2-artifact
+          path: sample2.zip
         
     
