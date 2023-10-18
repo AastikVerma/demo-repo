@@ -5,14 +5,18 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-    -name: checkout code
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
-    -name: create zip archive
-      -run: cd sample2
-            zip -r ../sample2.zip
+      
+  create-zip-archive:
+     runs-on: ubuntu-latest
+     steps: 
+      - name: create zip rachive
+        run:
+          cd sample2
+          zip -r ../sample2.zip
     
