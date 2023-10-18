@@ -19,4 +19,5 @@ jobs:
         run:
           cd sample2
           zip -r sample2.zip .
+        continue-on-error: true
     
