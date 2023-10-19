@@ -19,11 +19,11 @@ jobs:
         uses: actions/checkout@v2
       - name: create zip archive
         run:
-          zip -r index.zip index.html
+          zip -r release.zip ./*
       - name: upload zip artifact
         uses: actions/upload-artifact@v2
         with:
-          name: index-artifact
-          path: index.zip
+          name: repo-artifact
+          path: release.zip
         
     
